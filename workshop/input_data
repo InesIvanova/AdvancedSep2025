@@ -1,0 +1,56 @@
+# Player 1 row win
+peter
+georgi
+x
+4
+1
+5
+2
+6
+
+
+# Player 1 col win
+peter
+georgi
+x
+1
+5
+4
+2
+7
+
+
+# Player 1 primary diagonal win
+peter
+georgi
+x
+1
+2
+5
+3
+9
+
+# Player 1 secondary diagonal win
+peter
+georgi
+x
+3
+1
+5
+2
+7
+
+
+# No winner
+peter
+georgi
+x
+1
+2
+3
+5
+7
+4
+6
+9
+8
