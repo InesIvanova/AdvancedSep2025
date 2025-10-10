@@ -53,6 +53,9 @@ while True:
     row_movement, col_movement = direction_mapper[direction]
     next_row = current_row + row_movement
     next_col = current_col + col_movement
+    # Option 2 (replaces 53-55)
+    # cur_pos = list(map(lambda x, y: x + y, current_position, direction_mapper[direction]))
+
 
     if not is_in_range(next_row, rows) or not is_in_range(next_col, cols):
         continue
@@ -67,4 +70,6 @@ while True:
 
 
 for row in matrix:
-    print(''.join(row))
+    print(*row, sep='')
+    # print(''.join(row))
+
