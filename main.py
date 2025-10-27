@@ -1,17 +1,25 @@
-class Vehicle:
-    DEFAULT_FUEL_CONSUMPTION = 1
-
-    def __init__(self, fuel: float, horse_power: int):
-        self.fuel = fuel
-        self.horse_power = horse_power
-        self.fuel_consumption = self.DEFAULT_FUEL_CONSUMPTION
-
-class Car(Vehicle):
-    DEFAULT_FUEL_CONSUMPTION = 3
-
-    def __init__(self, fuel: float, horse_power: int):
-        super().__init__(fuel, horse_power)
+# def first_n(n):
+#     num = 0
+#     while num < n:
+#         yield num
+#         num += 1
+#
+# result = first_n(5)
+# for el in result:
+#     print(el)
 
 
-car = Car(1,100)
-print(car.fuel_consumption)
+def my_gen():
+    n = 1
+    yield n
+
+    n += 1
+    yield n
+
+    n += 1
+    yield n
+
+
+result = my_gen()
+for el in result:
+    print(el)
